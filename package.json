@@ -25,7 +25,7 @@
   "scripts": {
     "rstart": "react-scripts start",
     "start": "node server.js",
-    "rbuild": "npm install ",
+    "rbuild": "react-scripts build",
     "build": "NPM_CONFIG_PRODUCTION=false npm install npm &&  npm install -D tailwindcss postcss autoprefixer  && npm run rbuild ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
