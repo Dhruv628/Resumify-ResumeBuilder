@@ -21,8 +21,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "npm install &&  npm install -D tailwindcss postcss autoprefixer",
+    "rstart": "react-scripts start",
+    "start": "node server.js",
+    "rbuild": "npm install ",
+    "build":"NPM_CONFIG_PRODUCTION=false npm install npm &&  npm install -D tailwindcss postcss autoprefixer  && npm run rbuild ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
