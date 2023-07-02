@@ -7,7 +7,7 @@ function Personalinfo(props) {
     <>
     <div className='block  '>
       <div className='inline-block space-y-1 mx-1 '>
-        <div className="text-2xl font-semibold text-wider">{name}</div>
+        <div className="text-[1.35rem] font-bold tracking-[0.035]">{name}</div>
         <div className='text-sm font-semibold'>{post}</div>
       </div>
       <div className='font-sans space-y-1 mt-4 inline-block float-right '>
