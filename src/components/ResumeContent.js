@@ -760,7 +760,7 @@ const handleLanguageSave=(elem)=>{
        <hr className=" border-none h-[0.07rem] text-gray-500 bg-gray-500 xs:text "/>
         <div className=" mt-10 flex justify-center " >
           <div  id="print-only"  ref={resumeRef} className=" min-h-[850px] xs:text xs:mx-[0.2] md:mx-4 border-2 border-black px-4 bg-white py-4 xs:w-[100vw] sm:w-[90vw] md:w-[650px] rounded-lg">
-            <Personalinfo  name={name} post={post} email={email} phone={phone} address={address} linkedin={linkedin} />
+            <Personalinfo  name={name} post={post} email={email} phone={phone} address={address}  />
             <div className="space-y-3">
               <Summary summary={summary} />
               <Skills  skill={inputValues}/>
