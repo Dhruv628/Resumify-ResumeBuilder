@@ -23,10 +23,6 @@ function Personalinfo(props) {
         <i className="  text-xs fa-solid fa-location-dot"></i>
           <div className='text-[0.62rem]'>{address}</div>
         </div>
-        <div className='flex space-x-2 '>
-        <i className=" text-xs fa-brands fa-linkedin"></i>
-          <a className='text-[0.62rem]'  target='_blank' href={`${linkedin}`}>{linkedin}</a>
-        </div>
         
       </div>
     </div>
