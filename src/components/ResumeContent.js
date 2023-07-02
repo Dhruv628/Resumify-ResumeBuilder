@@ -25,7 +25,6 @@ const ResumeContent = React.forwardRef(() => {
   const [post, setPost] = useState("Web developer");
   const [phone, setPhone] = useState("+91 9119235690");
   const [address, setAddress] = useState("Uttar Pradesh");
-  const [linkedin, setLinkedin] = useState("www.linkedin.com");
 
 //PERSONAL INFO click button
   const PinfoClick = () => {
@@ -514,13 +513,6 @@ const handleLanguageSave=(elem)=>{
               <label  htmlFor="" className="font-semibold">Address</label>
              </div>
               <input onChange={handleChangeAddress} value={address} id="address" className= "border-[3px] w-52 border-gray-700 rounded-lg  text-xs px-2 py-1" type="text" />
-            </div>
-            <div className="flex">
-             <div className="w-32">
-
-              <label  htmlFor="" className="font-semibold">Linkedin</label>
-             </div>
-              <input onChange={handleChangeLinkedin} value={linkedin} id="linkedin" className="border-[3px] w-52 border-gray-700 rounded-lg  text-xs px-2 py-1" type="text" />
             </div>
             <button  className=" bg-gray-800 hover:bg-gray-900 rounded-lg text-white px-3 py-2">Save</button>
            </div>
