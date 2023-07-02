@@ -55,20 +55,12 @@ const ResumeContent = React.forwardRef(() => {
   const handleChangeAddress = (e) => {
  setAddress(e.target.value);
    };
-  const handleChangeLinkedin = (e) => {
- setLinkedin(e.target.value);
-   };
+ 
    
 //PERSONAL INFO SAVE button
    const PinfoSubmit=(elem)=>{
    elem.preventDefault();
-   localStorage.setItem("name",name)
-   localStorage.setItem("post",post)
-   localStorage.setItem("email",email)
-   localStorage.setItem("phone",phone)
-   localStorage.setItem("address",address)
-   localStorage.setItem("linkedin",linkedin)
-   console.log(localStorage.getItem("name"))
+
    let e=document.getElementById('Personal')
    if(parrow==="fa-solid fa-angle-down"){
      e.className="mx-10 space-y-3 p-4 inline-block shadow-xl rounded-lg border-[3px] border-gray-700   w-96"
@@ -140,7 +132,7 @@ const ResumeContent = React.forwardRef(() => {
     setInputCount(inputCount + 1);
   };
   //To save the SKILL inputs
-  const [inputValues, setInputValues] = useState(["HTML","CSS","JAVASCRIPT"]);
+  const [inputValues, setInputValues] = useState(["HTML"]);
   //Input onChange function
   const handleInputChange = (e, index) => {
     const newInputValues = [...inputValues];
@@ -182,8 +174,8 @@ const handleAddMoreProject = (e) => {
   e.preventDefault();
   setProjectCount(prevCount => prevCount + 1);
 };
-const [pname, setpname] = useState(["NewsMonkey","iNotebook"])
-const [pdesc, setpdesc] = useState(["News app made with react js","Full/MERN stack notes app on the cloud"])
+const [pname, setpname] = useState(["NewsMonkey"])
+const [pdesc, setpdesc] = useState(["News app made with react js"])
 
 const  handleProjectnameChange = (e, index) => {
   const newInputValues = [...pname];
@@ -228,10 +220,10 @@ const handleAddMoreJobs = (e) => {
   e.preventDefault();
   setjobCount(prevCount => prevCount + 1);
 };
-const [jobtitle, setjobtitle] = useState(["Senior web developer","Junior web developer"])
-const [jobcompany, setjobcompany] = useState(["Google","Amazon"])
-const [jobduration, setjobduration] = useState(["2/15/22-2/16/23","1/15/21-2/16/22"])
-const [jobdesc, setjobdesc] = useState(["Worked as a project manager","Worked as the vice president"])
+const [jobtitle, setjobtitle] = useState(["Senior web developer"])
+const [jobcompany, setjobcompany] = useState(["Google"])
+const [jobduration, setjobduration] = useState(["2/15/22-2/16/23"])
+const [jobdesc, setjobdesc] = useState(["Worked as a project manager"])
 const  jobtitleChange = (e, index) => {
   const newInputValues = [...pname];
   newInputValues[index] = e.target.value;
@@ -285,9 +277,9 @@ const handleAddMoreCourse = (e) => {
   e.preventDefault();
   setcourseCount(prevCount => prevCount + 1);
 };
-const [coursetitle, setcoursetitle] = useState(["Web development","C++ learning"])
-const [coursecompany, setcoursecompany] = useState(["Internshala","Udemy"])
-const [courseduration, setcourseduration] = useState(["7 months","6 months"])
+const [coursetitle, setcoursetitle] = useState(["Web development"])
+const [coursecompany, setcoursecompany] = useState(["Internshala"])
+const [courseduration, setcourseduration] = useState(["7 months"])
 //SAVE COURSE button
 const  coursetitleChange = (e, index) => {
   const newInputValues = [...coursetitle];
@@ -335,9 +327,9 @@ const handleAddMoreEducation= (e) => {
   e.preventDefault();
   seteducationcount(prevCount => prevCount + 1);
 };
-const [schooldegree, setschooldegree] = useState(["B. Tech with CS","12th standard"])
-const [schoolname, setschoolname] = useState(["SRMS , Bareilly","DPS, Bareilly"])
-const [schoolduaration, setschoolduaration] = useState(["2/15/17","2/16/18"])
+const [schooldegree, setschooldegree] = useState(["B. Tech with CS"])
+const [schoolname, setschoolname] = useState(["SRMS , Bareilly"])
+const [schoolduaration, setschoolduaration] = useState(["2/15/17"])
 const  schooldegreeChange = (e, index) => {
   const newInputValues = [...schooldegree];
   newInputValues[index] = e.target.value;
@@ -387,7 +379,7 @@ const handleAddMoreLanguage= (e) => {
   e.preventDefault();
   setlanguagecount(prevCount => prevCount + 1);
 };
-const [language, setlanguage] = useState(["Hindi","English"])
+const [language, setlanguage] = useState(["Hindi"])
 const  languageChange = (e, index) => {
   const newInputValues = [...language];
   newInputValues[index] = e.target.value;
@@ -767,7 +759,7 @@ const handleLanguageSave=(elem)=>{
         </div>
        <hr className=" border-none h-[0.07rem] text-gray-500 bg-gray-500 xs:text "/>
         <div className=" mt-10 flex justify-center " >
-          <div  id="print-only"  ref={resumeRef} className=" xs:text xs:mx-[0.2] md:mx-4 border-2 border-black px-4 bg-white py-4 xs:w-[100vw] sm:w-[90vw] md:w-[650px] rounded-lg">
+          <div  id="print-only"  ref={resumeRef} className=" min-h-[850px] xs:text xs:mx-[0.2] md:mx-4 border-2 border-black px-4 bg-white py-4 xs:w-[100vw] sm:w-[90vw] md:w-[650px] rounded-lg">
             <Personalinfo  name={name} post={post} email={email} phone={phone} address={address} linkedin={linkedin} />
             <div className="space-y-3">
               <Summary summary={summary} />
