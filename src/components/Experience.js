@@ -25,7 +25,7 @@ export default function Experience(props) {
      <div className='text-md  font-semibold'>{name}</div>
      <div className='flex space-x-4'>
          <div className='text-xs font-semibold'>{company[index]}</div>
-         <div className='text-xs italic'>{date[index]}</div>
+         <div className='text-[0.7rem] italic'>{date[index]}</div>
      </div>
      <div className='text-xs mt-1'>{jobdesc[index]}</div>
   </div>

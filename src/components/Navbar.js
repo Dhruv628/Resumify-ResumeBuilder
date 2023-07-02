@@ -6,14 +6,14 @@ export default function Navbar() {
   return (
     <div className="bg-black text-white ">
       <div className="flex space-x-7 py-3 mx-3">
-        <div className="text-xl font-semibold tracking-wider">Resumify</div>
+        <div className="text-3xl font-semibold tracking-wider">Resumify</div>
         <div className="hover:text-gray-300 cursor-pointer">
-        <button onClick={()=>{navigate("/")}} >
+        <button className="pt-2" onClick={()=>{navigate("/")}} >
             Home
           </button>
         </div>
         <div className="hover:text-gray-300 cursor-pointer">
-          <button onClick={()=>{navigate("/resume")}} >
+          <button className="pt-2" onClick={()=>{navigate("/resume")}} >
              Resume
           </button>
         </div>

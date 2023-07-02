@@ -12,7 +12,7 @@ export default function Education(props) {
  
   return (
     <div className='flex space-x-28 '>
-    <div className='text-xl font-semibold w-[2rem]'>Courses</div>
+    <div className='text-xl font-semibold w-[2rem]'>Education</div>
     <div className='space-y-2 mt-1'>
     {title.map((name, index) => (
     <div className=''>
