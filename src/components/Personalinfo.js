@@ -2,7 +2,7 @@ import React from 'react'
 
 
 function Personalinfo(props) {
-  const {name,email,phone,post,address,linkedin} = props
+  const {name,email,phone,post,address} = props
   return (
     <>
     <div className='block  '>
