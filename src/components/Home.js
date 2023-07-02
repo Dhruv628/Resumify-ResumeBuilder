@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
     <Navbar/>
-    <div className="bg-gray-300 xs:h-[88.5vh] sm:h-[88.5vh] md:h-[88.5vh] lg:h-[84.5vh] ">
+    <div className="bg-gray-300 xs:h-[88.5vh] sm:h-[88.5vh] md:h-[88.5vh] lg:h-[84.3vh] ">
       <div className="   flex justify-center items-center xs:flex-col sm:flex-col md:flex-col lg:flex-row lg:space-x-20 lg:h-[70vh] ">
         <div className= "xs:text-4xl xs:my-6 sm:text-5xl sm:my-10 md:text-5xl md:my-8 lg:text-5xl  font-bold opacity-90 tracking-wider space-y-5">
           <div>
